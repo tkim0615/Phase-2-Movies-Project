@@ -1,7 +1,123 @@
-# Getting Started with Create React App
+**Movie Explorer App**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movie Explorer is a React web application that allows users to explore and discover information about movies, including details such as name, image, release date, and summary.
 
+**Wireframe**
+<!-- Link to Wireframe - Insert the link to your wireframe created using Figma, Draw IO, or any other tool. -->
+
+**Github Repository**
+Movie Explorer GitHub Repository - https://github.com/tkim0615/Phase-2-Movies-Project
+
+**CRUD Routes**
+GET: Retrieve movie data.
+POST: Add new movie data.
+
+
+**React Router Routes**
+Search Route
+
+Route: /search
+Purpose: Used for searching movies.
+Coming Soon Route
+
+Route: /coming-soon
+Purpose: Display upcoming movies.
+New Movie Form Route
+
+Route: /new-movie-form
+Purpose: Form for adding new movie data.
+
+**Stretch Goals**
+DELETE: Detele movie data
+Dark Mode feature: Toggle between dark and light mode
+Sort: Sort movies by release date
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Titanic",
+    "image": ,
+    "release_year": 1997,
+    "summary": "Titanic is about..."
+  },
+  {
+    "id": 2,
+    "name": "Titanic",
+    "image": ,
+    "release_year": 1997,
+    "summary": "Titanic is about..."
+  }
+]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- # Getting Started with Create React App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In this app, 
 ## Available Scripts
 
 In the project directory, you can run:
@@ -67,4 +183,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
