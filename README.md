@@ -1,19 +1,19 @@
-**Movie Explorer App**
+***Movie Explorer App***
 
 Movie Explorer is a React web application that allows users to explore and discover information about movies, including details such as name, image, release date, and summary.
 
-**Wireframe**
+***Wireframe***
 <!-- Link to Wireframe - Insert the link to your wireframe created using Figma, Draw IO, or any other tool. -->
 
-**Github Repository**
+***Github Repository***
 Movie Explorer GitHub Repository - https://github.com/tkim0615/Phase-2-Movies-Project
 
-**CRUD Routes**
+***CRUD Routes***
 GET: Retrieve movie data.
 POST: Add new movie data.
 
 
-**React Router Routes**
+***React Router Routes***
 Search Route
 
 Route: /search
@@ -27,26 +27,26 @@ New Movie Form Route
 Route: /new-movie-form
 Purpose: Form for adding new movie data.
 
-**Stretch Goals**
-DELETE: Detele movie data
-Dark Mode feature: Toggle between dark and light mode
-Sort: Sort movies by release date
+***Stretch Goals***
+1. DELETE: Detele movie data
+2. Dark Mode feature: Toggle between dark and light mode
+3. Sort: Sort movies by release date
 
 ```json
 [
   {
     "id": 1,
     "name": "Titanic",
-    "image": ,
+    "image": "..." ,
     "release_year": 1997,
     "summary": "Titanic is about..."
   },
   {
     "id": 2,
-    "name": "Titanic",
-    "image": ,
-    "release_year": 1997,
-    "summary": "Titanic is about..."
+    "name": "Inception",
+    "image": "...",
+    "release_year": 2010,
+    "summary": "Inception is about..."
   }
 ]
 ```
