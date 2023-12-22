@@ -27,6 +27,19 @@ New Movie Form Route
 Route: /new-movie-form
 Purpose: Form for adding new movie data.
 
+***Component diagram***
+
+components
+├──App.js
+   ├── Header
+   └── MoviePage
+       ├── MovieList
+       └── Form
+       ├── Search
+       └── 
+
+
+
 ***Stretch Goals***
 1. DELETE: Detele movie data
 2. Dark Mode feature: Toggle between dark and light mode
