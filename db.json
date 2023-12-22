@@ -13,7 +13,15 @@
       "image": "...",
       "release_year": 2010,
       "summary": "Inception is about..."
-    }
+    },
+    {
+        "id": 3,
+        "name": "Home Alone",
+        "image": "...",
+        "release_year": 2010,
+        "summary": "Inception is about..."
+      },
+
   ]
 
 }

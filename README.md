@@ -12,6 +12,8 @@ Movie Explorer GitHub Repository - https://github.com/tkim0615/Phase-2-Movies-Pr
 ***CRUD Routes***
 GET: Retrieve movie data.
 POST: Add new movie data.
+DELETE: Delete movie data
+PATCH: Edit movie data.
 
 
 ***React Router Routes***
@@ -63,9 +65,9 @@ Purpose: Form for adding new movie data.
 
 
 ***Stretch Goals***
-1. DELETE: Delete movie data
+1. Sort movie by year.
 2. Dark Mode feature: Toggle between dark and light mode
-3. PATCH: Modify release date for coming soon movies
+3. Access public API to grab data to incorporate into add new movie form
 
 ```json
 [
