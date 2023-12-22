@@ -3,7 +3,8 @@
 Movie Explorer is a React web application that allows users to explore and discover information about movies, including details such as name, image, release date, and summary.
 
 ***Wireframe***
-<!-- Link to Wireframe - Insert the link to your wireframe created using Figma, Draw IO, or any other tool. -->
+https://docs.google.com/document/d/1L7jpElgcfC50Sp18EgfZjEgJpQJXU6dNeFIpGM1xneI/edit
+
 
 ***Github Repository***
 Movie Explorer GitHub Repository - https://github.com/tkim0615/Phase-2-Movies-Project
@@ -14,36 +15,33 @@ POST: Add new movie data.
 
 
 ***React Router Routes***
-Search Route
-
 Route: /search
 Purpose: Used for searching movies.
-Coming Soon Route
 
 Route: /coming-soon
 Purpose: Display upcoming movies.
-New Movie Form Route
 
 Route: /new-movie-form
 Purpose: Form for adding new movie data.
+
 
 ***Component diagram***
 
 components
 ├──App.js
    ├── Header
-   └── MoviePage
-       ├── MovieList
-       └── Form
-       ├── Search
+   └── MoviePage(states: movieList, searchTerm)
+       ├── MovieList(prop: movieList)
+       └── Form(states: formData, events: onSubmit)
+       ├── Search(prop: searchTerm, events:onChange)
        └── 
 
 
 
 ***Stretch Goals***
-1. DELETE: Detele movie data
+1. DELETE: Delete movie data
 2. Dark Mode feature: Toggle between dark and light mode
-3. Sort: Sort movies by release date
+3. PATCH: Modify release date for coming soon movies
 
 ```json
 [
