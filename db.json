@@ -1,0 +1,19 @@
+{
+"movies": [
+    {
+      "id": 1,
+      "name": "Titanic",
+      "image": "..." ,
+      "release_year": 1997,
+      "summary": "Titanic is about..."
+    },
+    {
+      "id": 2,
+      "name": "Inception",
+      "image": "...",
+      "release_year": 2010,
+      "summary": "Inception is about..."
+    }
+  ]
+
+}
