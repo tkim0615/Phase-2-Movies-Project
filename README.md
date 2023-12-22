@@ -28,16 +28,30 @@ Route: /new-movie-form
 Purpose: Form for adding new movie data.
 
 
-***Component diagram***
+***Component hierarchy***
 
-components
-├──App.js
-   ├── Header
-   └── MoviePage(states: movieList, searchTerm)
-       ├── MovieList(prop: movieList)
-       └── Form(states: formData, events: onSubmit)
-       ├── Search(prop: searchTerm, events:onChange)
-       └── 
+- **App.js**
+  - **Header**
+  - **MoviePage**
+    - States:
+      - `movieList`: List of movies.
+      - `searchTerm`: Current search term.
+    - **MovieList**
+      - Prop:
+        - `movieList`: List of movies to display.
+    - **Form**
+      - States:
+        - `formData`: Data from the form.
+      - Events:
+        - `onSubmit`: Event triggered on form submission.
+    - **Search**
+      - Prop:
+        - `searchTerm`: Current search term.
+      - Events:
+        - `onChange`: Event triggered on search term change.
+
+
+
 
 
 
