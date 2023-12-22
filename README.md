@@ -32,6 +32,10 @@ Purpose: Form for adding new movie data.
 
 - **App.js**
   - **Header**
+    - States:
+      - `isDark`: Current dark mode status.
+    - Events:
+        - `onClick`: Event triggered on button click.
   - **MoviePage**
     - States:
       - `movieList`: List of movies.
@@ -39,6 +43,9 @@ Purpose: Form for adding new movie data.
     - **MovieList**
       - Prop:
         - `movieList`: List of movies to display.
+      - **MovieCard**
+        - Prop:
+        - `movies`: Individual movie to display.
     - **Form**
       - States:
         - `formData`: Data from the form.
