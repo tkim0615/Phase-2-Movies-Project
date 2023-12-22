@@ -3,24 +3,149 @@
     {
       "id": 1,
       "name": "Titanic",
-      "image": "..." ,
+      "image": "https://cdn.cinematerial.com/p/297x/0f0v4qo6/titanic-movie-poster-md.jpg?v=1456630107" ,
       "release_year": 1997,
-      "summary": "Titanic is about..."
+      "summary": "Titanic is a romantic disaster film that unfolds the ill-fated love story between Jack and Rose aboard the luxurious but doomed ship during its maiden voyage in 1912."
     },
     {
       "id": 2,
       "name": "Inception",
-      "image": "...",
+      "image": "https://cdn.cinematerial.com/p/136x/7uwb4va7/inception-movie-poster-sm.jpg?v=1456797089",
       "release_year": 2010,
-      "summary": "Inception is about..."
+      "summary": "In Inception, a skilled thief enters the dreams of others to implant or steal ideas but is tasked with an unprecedented challenge of planting an idea in someone's mind, leading to a mind-bending exploration of dreams within dreams."
     },
     {
         "id": 3,
         "name": "Home Alone",
-        "image": "...",
-        "release_year": 2010,
-        "summary": "Inception is about..."
+        "image": "https://cdn.cinematerial.com/p/297x/4ctxix4g/home-alone-movie-poster-md.jpg?v=1456726066",
+        "release_year": 1990,
+        "summary": "Home Alone follows 8-year-old Kevin McCallister, who, accidentally left behind when his family goes on vacation, must defend his home from burglars using ingenious booby traps."
       },
+      {
+        "id": 14,
+        "name": "The Grand Budapest Hotel",
+        "image": "https://cdn.cinematerial.com/p/297x/ojtilc50/the-grand-budapest-hotel-movie-poster-md.jpg?v=1456051558",
+        "release_year": 2014,
+        "summary": "In this whimsical comedy, the eccentric concierge of the Grand Budapest Hotel and his protégé become embroiled in a madcap adventure involving stolen art, a murder investigation, and a charming lobby boy."
+      },
+      {
+        "id": 5,
+        "name": "The Dark Knight",
+        "image": "https://cdn.cinematerial.com/p/297x/udapnxr3/the-dark-knight-movie-poster-md.jpg?v=1456051180",
+        "release_year": 2008,
+        "summary": "When the menace known as The Joker emerges, Batman must confront one of the greatest psychological and physical tests of his ability to fight injustice."
+      }, 
+      {
+        "id": 6,
+        "name": "The Matrix",
+        "image": "https://cdn.cinematerial.com/p/297x/sejtqyfp/the-matrix-movie-poster-md.jpg?v=1673723611",
+        "release_year": 1999,
+        "summary": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
+      }, 
+      {
+        "id": 7,
+        "name": "Pulp Fiction",
+        "image": "https://cdn.cinematerial.com/p/297x/srmnoyxu/pulp-fiction-movie-poster-md.jpg?v=1668291848",
+        "release_year": 1994,
+        "summary": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+      },
+      {
+        "id": 8,
+        "name": "The Hangover",
+        "image": "https://cdn.cinematerial.com/p/297x/d8pusbbd/the-hangover-movie-poster-md.jpg?v=1456036482",
+        "release_year": 2009,
+        "summary": "A bachelor party in Las Vegas goes hilariously awry as a group of friends wakes up with no memory of the previous night and must piece together the events to find the groom."
+      },
+      {
+        "id": 9,
+        "name": "Anchorman: The Legend of Ron Burgundy",
+        "image": "https://cdn.cinematerial.com/p/297x/vwcd58v3/anchorman-the-legend-of-ron-burgundy-movie-poster-md.jpg?v=1534744449",
+        "release_year": 2004,
+        "summary": "The misadventures of a San Diego news anchor and his news team as they navigate the competitive world of broadcast journalism in the 1970s."
+      }, 
+      {
+        "id": 10,
+        "name": "The Grand Budapest Hotel",
+        "image": "https://cdn.cinematerial.com/p/297x/ojtilc50/the-grand-budapest-hotel-movie-poster-md.jpg?v=1456051558",
+        "release_year": 2014,
+        "summary": "In this whimsical comedy, the eccentric concierge of the Grand Budapest Hotel and his protégé become embroiled in a madcap adventure involving stolen art, a murder investigation, and a charming lobby boy."
+      },
+      {
+        "id": 11,
+        "name": "Cast Away",
+        "image": "https://cdn.cinematerial.com/p/297x/gr2eosrj/cast-away-movie-poster-md.jpg?v=1456832995",
+        "release_year": 2000,
+        "summary": "After a plane crash leaves him stranded on a deserted island, a FedEx executive, played by Tom Hanks, must learn to survive alone, facing both physical and emotional challenges. His only companion is a volleyball named Wilson."
+      },
+      {
+        "id": 12,
+        "name": "Civil War",
+        "image": "https://media-cache.cinematerial.com/p/500x/bo80z7oo/civil-war-french-movie-poster.jpg?v=1703269215",
+        "release_year": 2024,
+        "summary": "In the near future, a group of war journalists attempt to survive while reporting the truth as the United States stands on the brink of civil war."
+      },
+      {
+        "id": 13,
+        "name": "The Beekeeper",
+        "image": "https://cdn.cinematerial.com/p/297x/oqagdh2u/the-beekeeper-movie-poster-md.jpg?v=1696435324",
+        "release_year": 2024,
+        "summary": "One man's campaign for vengeance takes on national stakes after he is revealed to be a former operative of a powerful and clandestine organization known as Beekeepers."
+      },
+      {
+        "id": 14,
+        "name": "Argylle",
+        "image": "https://media-cache.cinematerial.com/p/500x/eltxrv33/argylle-turkish-movie-poster.jpg?v=1703266929",
+        "release_year": 2024,
+        "summary": "When the plots of reclusive author Elly Conway's fictional espionage novels begin to mirror the covert actions of a real-life spy organization, quiet evenings at home become a thing of the past. Accompanied by her cat Alfie and Aiden, a cat-allergic spy, Elly races across the world to stay one step ahead of the killers as the line between Conway's fictional world and her real one begins to blur."
+      },
+      {
+        "id": 15,
+        "name": "Finalmente l'alba",
+        "image": "https://cdn.cinematerial.com/p/297x/51yocjrm/finalmente-lalba-italian-movie-poster-md.jpg?v=1703270004",
+        "release_year": 2024,
+        "summary": "A young Roman woman during the 1950s is on the verge of becoming engaged to a man. She goes to Cinecittà to do an audition as an extra and is thrust into this almost infinite night during which she discovers herself."
+      },
+      {
+        "id": 16,
+        "name": "The Iron Claw",
+        "image": "https://cdn.cinematerial.com/p/297x/suspivtp/the-iron-claw-movie-poster-md.jpg?v=1699945419",
+        "release_year": 2023,
+        "summary": "The true story of the inseparable Von Erich brothers, who made history in the intensely competitive world of professional wrestling in the early 1980s. Through tragedy and triumph, under the shadow of their domineering father and coach, the brothers seek larger-than-life immortality on the biggest stage in sports."
+      },
+      {
+        "id": 17,
+        "name": "Parasite",
+        "image": "https://cdn.cinematerial.com/p/297x/zjfkr4ca/parasite-movie-poster-md.jpg?v=1565848483",
+        "release_year": 2019,
+        "summary": "In this darkly comedic thriller, the Kim family, struggling with poverty, infiltrates the wealthy Park family's lives, leading to unexpected and gripping consequences."
+      },
+      {
+        "id": 18,
+        "name": "Nomadland",
+        "image": "https://cdn.cinematerial.com/p/297x/yj4uorz5/nomadland-movie-poster-md.jpg?v=1607968463",
+        "release_year": 2020,
+        "summary": "Winner of the 2021 Oscar for Best Picture, 'Nomadland,' directed by Chloé Zhao, follows a woman in her 60s who, after the economic collapse of a company town in rural Nevada, becomes a modern-day nomad exploring the American West."
+      },
+      {
+        "id": 19,
+        "name": "Interstellar",
+        "image": "https://cdn.cinematerial.com/p/297x/ctpnz4mq/interstellar-movie-poster-md.jpg?v=1456424450",
+        "release_year": 2014,
+        "summary": "In 'Interstellar,' directed by Christopher Nolan, a team of astronauts embarks on a space mission through a wormhole in search of a new habitable planet for humanity, facing the challenges of time dilation and the mysteries of space."
+      },
+      {
+        "id": 20,
+        "name": "A Star is Born",
+        "image": "https://cdn.cinematerial.com/p/297x/qyqymeza/a-star-is-born-movie-poster-md.jpg?v=1547826490",
+        "release_year": 2018,
+        "summary": "In the 2018 film 'A Star is Born,' directed by Bradley Cooper, a seasoned musician falls in love with and mentors a talented young singer, but as her career rises, his battles with alcoholism threaten to derail both of their lives."
+      }
+
+
+
+      
+      
+
 
   ]
 
