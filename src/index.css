@@ -24,8 +24,8 @@ button {
 }
 
 button.primary {
-  background-color: var(--green);
-  color: white;
+  background-color: #eee;
+  color: #333;
 }
 
 .app {
@@ -99,6 +99,7 @@ input:focus {
 
 .cards {
   list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .card {
