@@ -10,11 +10,6 @@ function App() {
     <div className="App">
       <Header />
       <MoviePage />
-      {/* <Routes>
-        <Route path="/" element={<MoviePage />} />
-        <Route path="/coming-soon" element={<ComingSoon />} />
-        <Route path="/new-movie-form" element={<NewMovieForm />} />
-      </Routes> */}
     </div>
   );
 }
