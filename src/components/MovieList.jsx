@@ -1,4 +1,3 @@
-
 import MovieCard from "./MovieCard";
 
 function MovieList({movies}) {
