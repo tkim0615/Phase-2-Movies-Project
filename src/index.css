@@ -204,3 +204,12 @@ input:focus {
     width: calc(20% - 2rem);
   }
 }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 10px;
+}
