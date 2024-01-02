@@ -26,13 +26,30 @@ const deleteMovie = (deletedMovie) =>{
     })
 }
 
+function onUpdateRelease(updatedMovie)
+{
+  const updatedMovies = movies.map(originalMovie => 
+    {
+      if (originalMovie.id === updatedMovie.id)
+      {
+        return updatedMovie
+      }
+
+      else{
+        return originalMovie
+      }
+    })
+
+    setMovies(updatedMovies)
+}
+
 
     return (
     <main>
         <Routes>
           <Route
             path="/"
-            element={<Home homeMovies={movies.slice(0,5)} deleteMovie={deleteMovie} />}
+            element={<Home homeMovies={movies.slice(0,5)} deleteMovie={deleteMovie} onUpdateRelease={onUpdateRelease} url={url} />}
           />
           <Route
             path="/new-movie-form"
@@ -40,11 +57,11 @@ const deleteMovie = (deletedMovie) =>{
           />
           <Route
             path="/movies"
-            element={<MovieList deleteMovie={deleteMovie} movies={movies} />}
+            element={<MovieList deleteMovie={deleteMovie} movies={movies} onUpdateRelease={onUpdateRelease} url={url} />}
           />
             <Route
               path="/movies/coming-soon"
-              element={<ComingSoon deleteMovie={deleteMovie} movies={movies} />}
+              element={<ComingSoon deleteMovie={deleteMovie} movies={movies} onUpdateRelease={onUpdateRelease} url={url} />}
             />
         </Routes>
     </main>
