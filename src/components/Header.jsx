@@ -8,22 +8,22 @@ function Header()
             <nav>
                 <div className="navigation">
                     <Link
-                        className="button"
+                        className="nav-button"
                         to="/">
                         Home
                     </Link>
                     <Link
-                        className="button"
+                        className="nav-button"
                         to="/movies">
                         All Movies
                     </Link>
                     <Link
-                        className="button"
+                        className="nav-button"
                         to="/movies/coming-soon">
                         Coming Soon
                     </Link>
                     <Link
-                        className="button"
+                        className="nav-button"
                         to="/new-movie-form">
                         Add Movie
                     </Link>

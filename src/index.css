@@ -207,9 +207,21 @@ input:focus {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
+  background: var(--accent-color);
+  border: 2px solid #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.button {
+.nav-button {
   padding: 10px;
+  color: #ffffff;
+  border-right: 1px solid #000000;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: #e68300;
 }

@@ -24,19 +24,27 @@ function MovieCard({ movie, deleteMovie, onUpdateRelease, url }) {
   {
     e.preventDefault()
 
-    fetch(`${url}/${movie.id}`,
+    if (formData.release_year > 0)
     {
-      method: "PATCH",
-      headers: 
+      fetch(`${url}/${movie.id}`,
       {
-        "content-type": "application/json"
-      },
-      body: JSON.stringify(formData)
-    })
-    .then(resp => resp.json())
-    .then(editedMovie => onUpdateRelease(editedMovie))
+        method: "PATCH",
+        headers: 
+        {
+          "content-type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(resp => resp.json())
+      .then(editedMovie => onUpdateRelease(editedMovie))
 
-    setEditing(!editing)
+      setEditing(!editing)
+    }
+
+    else
+    {
+      setEditing(!editing)
+    }
   }
 
 
@@ -52,6 +60,7 @@ function MovieCard({ movie, deleteMovie, onUpdateRelease, url }) {
           <button type="submit">Confirm</button>
         </form>) : 
         (<p className="card-release">{movie.release_year}
+          <br />
           <button type="click" onClick={handleClickEditing}>Edit</button>
         </p>)}
         <p className="card-summary">{movie.summary}</p>
