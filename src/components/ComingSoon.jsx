@@ -1,7 +1,7 @@
 import react from "react"
 import MovieList from "./MovieList"
 
-function ComingSoon({ movies })
+function ComingSoon({ movies, deleteMovie })
 {
 
     let currentDate = new Date()
@@ -13,7 +13,7 @@ function ComingSoon({ movies })
         })
 
     return (
-        <MovieList movies={comingSoonMovies} />
+        <MovieList movies={comingSoonMovies} deleteMovie={deleteMovie} />
     )
 }
 
