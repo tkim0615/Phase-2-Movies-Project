@@ -46,6 +46,7 @@ function MovieCard({ movie, deleteMovie, onUpdateRelease, url }) {
       <img src={movie.image} alt={movie.name} />
       <div className="card-content">
         <h4 className="card-title">{movie.name}</h4>
+        
         {editing ?
         (<form onSubmit={handleSubmit}>
           <input type="text" name="release_year" placeholder="Release year" onChange={handleChange}/>
@@ -54,6 +55,7 @@ function MovieCard({ movie, deleteMovie, onUpdateRelease, url }) {
         (<p className="card-release">{movie.release_year}
           <button type="click" onClick={handleClickEditing}>Edit</button>
         </p>)}
+        
         <p className="card-summary">{movie.summary}</p>
         <button onClick={()=>handleClick(movie)}className="primary">Delete</button>
       </div>

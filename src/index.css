@@ -157,6 +157,11 @@ input:focus {
 .card-release {
   font-size: 1em;
   color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.card-release button {
+  margin-left: 0.5rem;
 }
 
 .card-summary {
