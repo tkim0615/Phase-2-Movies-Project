@@ -36,6 +36,23 @@ const filteredBySearch = movies.filter(movie =>{
     return true
 }})
 
+function onUpdateRelease(updatedMovie)
+{
+  const updatedMovies = movies.map(originalMovie => 
+    {
+      if (originalMovie.id === updatedMovie.id)
+      {
+        return updatedMovie
+      }
+
+      else{
+        return originalMovie
+      }
+    })
+
+    setMovies(updatedMovies)
+}
+
 
     return (
     <main>
@@ -43,7 +60,7 @@ const filteredBySearch = movies.filter(movie =>{
         <Routes>
           <Route
             path="/"
-            element={<Home homeMovies={filteredBySearch.slice(0,5)} deleteMovie={deleteMovie} />}
+            element={<Home homeMovies={filteredBySearch.slice(0,5)} deleteMovie={deleteMovie} onUpdateRelease={onUpdateRelease} url={url} />}
           />
           <Route
             path="/new-movie-form"
@@ -51,11 +68,11 @@ const filteredBySearch = movies.filter(movie =>{
           />
           <Route
             path="/movies"
-            element={<MovieList deleteMovie={deleteMovie} movies={filteredBySearch} />}
+            element={<MovieList deleteMovie={deleteMovie} movies={filteredBySearch} onUpdateRelease={onUpdateRelease} url={url} />}
           />
             <Route
               path="/movies/coming-soon"
-              element={<ComingSoon deleteMovie={deleteMovie} movies={filteredBySearch} />}
+              element={<ComingSoon deleteMovie={deleteMovie} movies={filteredBySearch} onUpdateRelease={onUpdateRelease} url={url} />}
             />
         </Routes>
     </main>
