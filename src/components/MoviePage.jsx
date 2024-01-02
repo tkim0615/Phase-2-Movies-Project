@@ -4,6 +4,7 @@ import NewMovieForm from "./NewMovieForm"
 import { Routes, Route } from "react-router-dom"
 import ComingSoon from "./ComingSoon"
 import Home from "./Home"
+import Search from "./Search"
 const url = 'http://localhost:4001/movies'
 
 function MoviePage() {
@@ -29,6 +30,7 @@ const deleteMovie = (deletedMovie) =>{
 
     return (
     <main>
+      <Search />
         <Routes>
           <Route
             path="/"
