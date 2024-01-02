@@ -1,4 +1,5 @@
 import react, {useState} from "react"
+import { Link } from "react-router-dom"
 
 function MovieCard({ movie, deleteMovie, onUpdateRelease, url }) {
 
@@ -43,10 +44,13 @@ function MovieCard({ movie, deleteMovie, onUpdateRelease, url }) {
 
   return (
     <li className="card">
+      <Link to={`/movies/${movie.id}`}>
       <img src={movie.image} alt={movie.name} />
+       </Link>
+      
       <div className="card-content">
         <h4 className="card-title">{movie.name}</h4>
-        
+
         {editing ?
         (<form onSubmit={handleSubmit}>
           <input type="text" name="release_year" placeholder="Release year" onChange={handleChange}/>
