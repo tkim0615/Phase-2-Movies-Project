@@ -1,7 +1,7 @@
 {
 "movies": [
     {
-      "id": 1,
+     "id": 1,
       "name": "Titanic",
       "image": "https://cdn.cinematerial.com/p/297x/0f0v4qo6/titanic-movie-poster-md.jpg?v=1456630107" ,
       "release_year": 1997,

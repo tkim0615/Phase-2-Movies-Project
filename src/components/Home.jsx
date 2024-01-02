@@ -1,7 +1,7 @@
 import {useEffect, useState } from "react"
 import MovieCard from "./MovieCard"
 
-function Home({url, homeMovies, deleteHomeMovie})
+function Home({url, homeMovies, deleteMovie})
 {
     // const [homeMovies, setHomeMovies] = useState([])
 
@@ -18,20 +18,11 @@ function Home({url, homeMovies, deleteHomeMovie})
     //     setHomeMovies(movies.slice(0, 5))
     // }, [movies]);
 
-    // const deleteMovie = (deletedMovie) =>{
-    //     const moviesArrayWithOutDeletedMovie = homeMovies.filter(movie =>{
-    //         if(movie.id !== deletedMovie.id){
-    //             return true
-    //         }
-    //     })
-    //     setHomeMovies(moviesArrayWithOutDeletedMovie)
-        
-    // }
 
     return (
         <div>
             <h2>Check These Movies Out!  You Can Also Look At All Movies By Clicking "All Movies" Above!</h2>
-            <ul className="cards">{homeMovies.map(movie => <MovieCard deleteMovie={deleteHomeMovie}  key={movie.id} movie={movie} />)}</ul>
+            <ul className="cards">{homeMovies.map(movie => <MovieCard deleteMovie={deleteMovie}  key={movie.id} movie={movie} />)}</ul>
 
         </div>
     )

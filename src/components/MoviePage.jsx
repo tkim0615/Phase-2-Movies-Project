@@ -4,43 +4,27 @@ import NewMovieForm from "./NewMovieForm"
 import { Routes, Route } from "react-router-dom"
 import ComingSoon from "./ComingSoon"
 import Home from "./Home"
-
 const url = 'http://localhost:4001/movies'
 
 function MoviePage() {
   const  [movies, setMovies] = useState([])
-  const [homeMovies, setHomeMovies] = useState([])
 
     useEffect(() => {
       fetch(url)
       .then(r=>r.json()).then(setMovies)
 }   ,[])
 
-useEffect(() =>{
-  setHomeMovies(movies.slice(0, 5))
-}, [movies]);
 
-//delete movies from home page
-const deleteHomeMovie = (deletedMovie) =>{
-  const moviesArrayWithOutDeletedMovie = movies.filter(movie =>{
-      if(movie.id !== deletedMovie.id){
-          return true
-      }
+const deleteMovie = (deletedMovie) =>{
+  fetch(`${url}/${deletedMovie.id}`, {
+    method: 'DELETE',
   })
-  setMovies(moviesArrayWithOutDeletedMovie)
-
+    .then((res) => res.json())
+    .then((deletedMovieResponse) => {
+      const moviesArrayWithOutDeletedMovie = movies.filter((movie) => movie.id !== deletedMovie.id)
+      setMovies(moviesArrayWithOutDeletedMovie)
+    })
 }
-
-//delete function for all movies page
-const deleteMovie = (deletedMovie) =>{ 
-  const moviesArrayWithOutDeletedMovie = movies.filter( movie =>{
-    if(movie.id !== deletedMovie.id){
-      return true
-    }
-  })
-  setMovies(moviesArrayWithOutDeletedMovie)
-}
-
 
 
     return (
@@ -48,7 +32,7 @@ const deleteMovie = (deletedMovie) =>{
         <Routes>
           <Route
             path="/"
-            element={<Home homeMovies={homeMovies} deleteHomeMovie={deleteHomeMovie} />}
+            element={<Home homeMovies={movies.slice(0,5)} deleteMovie={deleteMovie} />}
           />
           <Route
             path="/new-movie-form"
