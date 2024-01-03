@@ -6,7 +6,7 @@ function NewMovieForm() {
           <input type="text" name="name" placeholder="Movie name" />
           <input type="text" name="image" placeholder="Image URL" />
           <input type="text" name="release_year" placeholder="Release year" />
-          <input type="text" name="summary" placeholder="Summary" />
+          <input type="text" name="summary" plaeholder="Summary" />
 
           <button type="submit">Add Movie</button>
         </form>
