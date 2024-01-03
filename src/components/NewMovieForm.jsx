@@ -15,7 +15,6 @@ function NewMovieForm({ onAddMovie, url }) {
       [name]: value,
     }));
   };
-  console.log (form)
   const handleSubmit = (e) => {
     e.preventDefault();
 
