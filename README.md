@@ -12,7 +12,7 @@ Movie Explorer GitHub Repository - https://github.com/tkim0615/Phase-2-Movies-Pr
 ***CRUD Routes***
 GET: Retrieve movie data.
 POST: Add new movie data.
-DELETE: Delete movie data
+DELETE: Delete movie data.
 PATCH: Edit movie data.
 
 
@@ -20,8 +20,8 @@ PATCH: Edit movie data.
 Route: /(root route)
 Purpose: Used for landing page.
 
-Route: /search
-Purpose: Used for searching movies.
+Route: /movies
+Purpose: Used for displaying all movies.
 
 Route: /coming-soon
 Purpose: Display upcoming movies.
@@ -65,7 +65,7 @@ Purpose: Form for adding new movie data.
 
 
 ***Stretch Goals***
-1. Sort movie by year.
+1. Search movies by name
 2. Dark Mode feature: Toggle between dark and light mode
 3. Access public API to grab data to incorporate into add new movie form
 

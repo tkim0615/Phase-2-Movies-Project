@@ -1,11 +1,13 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect} from "react"
 import MovieList from "./MovieList"
 import NewMovieForm from "./NewMovieForm"
 import { Routes, Route } from "react-router-dom"
 import ComingSoon from "./ComingSoon"
 import Home from "./Home"
 import Search from "./Search"
+import MovieDetail from "./MovieDetail"
 const url = 'http://localhost:4001/movies'
+
 
 function MoviePage() {
   const [movies, setMovies] = useState([])
@@ -74,6 +76,13 @@ function onUpdateRelease(updatedMovie)
               path="/movies/coming-soon"
               element={<ComingSoon deleteMovie={deleteMovie} movies={filteredBySearch} onUpdateRelease={onUpdateRelease} url={url} />}
             />
+            <Route
+              path="/movies/:id"
+              element={<MovieDetail />}
+            />
+            
+            
+
         </Routes>
     </main>
   );

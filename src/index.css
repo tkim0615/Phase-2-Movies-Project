@@ -126,6 +126,8 @@ input:focus {
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease-in-out;
+  border: 2px solid var(--accent-color);
+
 }
 
 .card:hover {
@@ -157,6 +159,11 @@ input:focus {
 .card-release {
   font-size: 1em;
   color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.card-release button {
+  margin-left: 0.5rem;
 }
 
 .card-summary {
@@ -225,3 +232,5 @@ input:focus {
 .nav-button:hover {
   background-color: #e68300;
 }
+
+
