@@ -46,9 +46,12 @@ Purpose: Form for adding new movie data.
       - Prop:
         - `movieList`: List of movies to display.
       - **MovieCard**
-        - Prop:
-        - `movies`: Individual movie to display.
-    - **Form**
+          - Prop:
+          - `movies`: Individual movie to display.
+    - **MovieDetail**
+      - State:
+        - `movie`: Single movie to display.
+    - **NewMovieForm**
       - States:
         - `formData`: Data from the form.
       - Events:
@@ -58,9 +61,6 @@ Purpose: Form for adding new movie data.
         - `searchTerm`: Current search term.
       - Events:
         - `onChange`: Event triggered on search term change.
-
-
-
 
 
 
