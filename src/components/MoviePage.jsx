@@ -55,6 +55,9 @@ function onUpdateRelease(updatedMovie)
     setMovies(updatedMovies)
 }
 
+function onAddMovie (newMovie){
+  setMovies([...movies, newMovie])
+}
 
     return (
     <main>
@@ -66,7 +69,7 @@ function onUpdateRelease(updatedMovie)
           />
           <Route
             path="/new-movie-form"
-            element={<NewMovieForm />}
+            element={<NewMovieForm url={url} onAddMovie={onAddMovie}/>}
           />
           <Route
             path="/movies"
