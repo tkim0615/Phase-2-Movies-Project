@@ -49,7 +49,6 @@ function MovieCard({ movie, deleteMovie, onUpdateRelease, url }) {
   }
 
 
-
   return (
     <li className="card">
       <Link to={`/movies/${movie.id}`}>

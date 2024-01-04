@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function Search({searchTerm, onHandleSearchChange}){
 
     const handleChange =(e) =>{
@@ -18,7 +17,6 @@ function Search({searchTerm, onHandleSearchChange}){
                 onChange={handleChange}
             />
         </div>
-
     )
 }
 

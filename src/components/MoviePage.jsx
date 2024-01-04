@@ -83,9 +83,6 @@ function onAddMovie (newMovie){
               path="/movies/:id"
               element={<MovieDetail />}
             />
-            
-            
-
         </Routes>
     </main>
   );
