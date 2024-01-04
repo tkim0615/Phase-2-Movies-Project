@@ -33,10 +33,10 @@ const onHandleSearchChange =(e) =>{
   setSearchTerm(e.target.value)
 }
 
-const filteredBySearch = movies.filter(movie =>{
-  if(movie.name.toLowerCase().includes(searchTerm.toLowerCase())){
-    return true
-}})
+const filteredBySearch = movies.filter(movie => (
+  movie.name.toLowerCase().includes(searchTerm.toLowerCase())
+));
+  
 
 function onUpdateRelease(updatedMovie)
 {
@@ -83,6 +83,8 @@ function onAddMovie (newMovie){
               path="/movies/:id"
               element={<MovieDetail />}
             />
+            
+
         </Routes>
     </main>
   );
