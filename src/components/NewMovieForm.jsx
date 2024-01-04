@@ -54,10 +54,8 @@ function NewMovieForm({ onAddMovie, url }) {
         })
           .then((resp) => resp.json())
           .then((newMovie) => {
-            // Callback function to handle the newly added movie
             onAddMovie(newMovie);
 
-            // Clear the form after successful submission
             setFormData({
               name: "",
               image: "",

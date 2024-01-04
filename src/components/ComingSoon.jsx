@@ -5,7 +5,7 @@ function ComingSoon({ movies, deleteMovie, onUpdateRelease, url })
 
     let currentDate = new Date()
     let currentYear = currentDate.getFullYear()
-
+console.log(currentDate, currentYear)
     const comingSoonMovies = movies.filter(movie => 
         {
             return movie.release_year >= currentYear
