@@ -1,4 +1,3 @@
-import react from "react"
 import MovieList from "./MovieList"
 
 function ComingSoon({ movies, deleteMovie, onUpdateRelease, url })

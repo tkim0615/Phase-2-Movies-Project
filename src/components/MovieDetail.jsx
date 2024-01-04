@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom"
 import {useState, useEffect} from "react"
-import MovieCard from "./MovieCard"
 
 function MovieDetail (){
     const [movie, setMovie] = useState({})
